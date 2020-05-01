@@ -106,7 +106,7 @@ class DemoApplicationTests {
 
 
 	private byte[] readBytes(String file) throws URISyntaxException, IOException {
-		return Files.readAllBytes(Paths.get(ClassLoader.getSystemResource("invalid_req.json").toURI()));
+		return Files.readAllBytes(Paths.get(ClassLoader.getSystemResource(file).toURI()));
 	}
 
 }
